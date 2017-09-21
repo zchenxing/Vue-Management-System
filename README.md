@@ -2,7 +2,6 @@
 > 一个简单的后台管理系统，只是一个简单的框架，方便不同项目扩展。
 > 项目基于 vue-cli 脚手架 ，使用 Vue + Vue-Router + Vuex + Axios + Element-UI 这一系列技术栈。
 
-> A Vue.js project
 
 ## Build Setup
 
@@ -20,4 +19,3 @@ npm run build
 npm run build --report
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
