@@ -1,0 +1,112 @@
+
+@content-color: #F9FAFC;
+
+@black-color: #1F2d3d;
+@light-black-color: #324057;
+@extra-light-black-color: #475669;
+
+@silver-color: #8492A6;
+@light-silver-color: #99A9BF;
+@extra-light-silver-color: #C0CCDA;
+
+@gray-color: #D3DCE6;
+@light-gray-color: #E5E9F2;
+@extra-light-gray-color: #EFF2F7;
+
+@dark-white-color: #F9FAFC;
+@white-color: #ffffff;
+
+
+@blue-color: #20A0FF;
+@light-blue-color: #58B7FF;
+@dark-light-blue-color: #1D8CE0;
+
+@success-color: #13CE66;
+@waring-color: #F7BA2A;
+@danger-color: #FF4949;
+
+
+@title-font: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+
+
+@topBarHeight:60px;
+@leftMenuWidth:200px;
+
+.top-bar-box{
+    background-color: @blue-color;
+     position: absolute;
+     left: 0;
+     right: 0;
+     top: 0;
+     height: @topBarHeight;
+
+     .top-bar-title{
+        height: 100%;
+        padding-left: 30px;
+        line-height: @topBarHeight;
+        color: @content-color;
+        font-size: 20px;
+        font-family: @title-font;
+    }
+}
+
+.left-nav-box {
+    position: fixed;
+    top: @topBarHeight;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: @leftMenuWidth;
+    overflow-y: auto;
+    background-color: #eef1f6;
+}
+
+.content-box{
+    background-color: palegoldenrod;
+    position: absolute;
+    left: @leftMenuWidth;
+    top: @topBarHeight;
+    right: 0;
+    bottom: 0;
+}
+
+
+
+
+.login-page-box{
+    background-color: @light-blue-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    .login-center-box{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 500px;
+        height: 320px;
+        margin-left:-250px;
+        margin-top:-160px;
+        background-color: @white-color;
+
+        border-radius: 15px;
+        overflow: hidden;
+
+        .login-center-title{
+            height: 50px;
+            line-height: 50px;
+            text-align: center;            
+            margin-bottom: 40px;
+            background-color: @extra-light-gray-color;
+        }
+
+        .login-center-title>p{
+            font-size: 23px;
+            font-family: @title-font;                
+            color: @light-black-color;
+        }
+
+    }
+}
