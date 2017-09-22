@@ -16,7 +16,6 @@
 @dark-white-color: #F9FAFC;
 @white-color: #ffffff;
 
-
 @blue-color: #20A0FF;
 @light-blue-color: #58B7FF;
 @dark-light-blue-color: #1D8CE0;
@@ -29,7 +28,7 @@
 @title-font: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
 
 
-@topBarHeight:60px;
+@topBarHeight:70px;
 @leftMenuWidth:200px;
 
 .top-bar-box{
@@ -75,7 +74,7 @@
 }
 
 .content-box{
-    background-color: palegoldenrod;
+    background-color: @dark-white-color;
     position: absolute;
     left: @leftMenuWidth;
     top: @topBarHeight;
@@ -87,6 +86,10 @@
 
 
 .login-page-box{
+    background-position: center center;
+    background: url('../images/login_bg.jpg') no-repeat;
+    background-size: cover;
+
     background-color: @light-blue-color;
     position: absolute;
     top: 0;
@@ -96,12 +99,13 @@
 
     .login-center-box{
         position: absolute;
-        left: 50%;
-        top: 50%;
-        width: 500px;
+        top: 0; left: 0; bottom: 0; right: 0;          
+        margin: auto;
+        width: 80%;
+        max-width: 500px;
         height: 320px;
-        margin-left:-250px;
-        margin-top:-160px;
+        // margin-left:-250px;
+        // margin-top:-160px;
         background-color: @white-color;
 
         border-radius: 15px;
