@@ -41,12 +41,25 @@
      height: @topBarHeight;
 
      .top-bar-title{
+        float: left;        
         height: 100%;
         padding-left: 30px;
         line-height: @topBarHeight;
         color: @content-color;
         font-size: 20px;
         font-family: @title-font;
+    }
+
+    .top-bar-tool{
+        float: right;
+        padding-right: 50px;
+        height: 100%;
+        line-height: @topBarHeight;
+
+        li {
+            float: right;
+            padding-left: 20px;
+        }
     }
 }
 
