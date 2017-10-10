@@ -8,7 +8,7 @@ const apiBasseUrl = 'http://localhost:8092/api/v1';
 let RestfulClient = {
 
     get: function(url, success, failed) {
-        // console.log('')
+        console.log('get = ' + apiBasseUrl + url);
         vue.axios.get(apiBasseUrl + url).then((response) => {
             success(response.data.data);
         }).catch((error) => {
@@ -18,7 +18,7 @@ let RestfulClient = {
     post: function(url, params, success, failed) {
         vue.axios.post(apiBasseUrl + url, params).then((response) => {
             console.log(response);
-            success(response);
+            success(response.data.data);
         }).catch((error) => {
             console.log(error);
             failed(error);

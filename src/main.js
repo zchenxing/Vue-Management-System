@@ -5,24 +5,26 @@ import App from './App'
 import router from './router'
 import axios from 'axios'
 import vueAxios from 'vue-axios'
-import vuex from 'vuex'
 import elementUI from 'element-ui'
+import store from './store/index'
 import RestfulPlugin from './plugins/RestfuiPlugin'
+import CommonPlugin from './plugins/CommonPlugin'
 import 'element-ui/lib/theme-default/index.css'
 
 import './less/reset.less'
 import './less/style.less'
 
-Vue.use(vuex);
 Vue.use(vueAxios, axios);
 Vue.use(elementUI);
 Vue.use(RestfulPlugin);
+Vue.use(CommonPlugin);
 
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
     el: '#app',
+    store,
     router,
     template: '<App/>',
     components: { App }

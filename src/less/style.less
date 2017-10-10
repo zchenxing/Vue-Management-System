@@ -33,11 +33,12 @@
 
 .top-bar-box{
     background-color: @blue-color;
-     position: absolute;
+     position: fixed;
      left: 0;
      right: 0;
      top: 0;
      height: @topBarHeight;
+     z-index: 100;
 
      .top-bar-title{
         float: left;        
@@ -70,16 +71,39 @@
     height: 100%;
     width: @leftMenuWidth;
     overflow-y: auto;
-    background-color: #eef1f6;
+    background-color: @white-color;
 }
 
 .content-box{
-    background-color: @dark-white-color;
+    background-color: @extra-light-gray-color;
     position: absolute;
     left: @leftMenuWidth;
     top: @topBarHeight;
     right: 0;
     bottom: 0;
+}
+
+
+.page-main-box{
+
+    background-color: @white-color;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    left: 30px;
+    bottom: 30px;
+    overflow-y: auto;
+    padding: 30px 20px;
+
+}
+
+
+
+.page-box{
+    width: 100%;
+    text-align: right;
+    padding-right: 50px;
+    padding-top: 40px;
 }
 
 
@@ -127,3 +151,5 @@
 
     }
 }
+
+

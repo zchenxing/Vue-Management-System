@@ -5,7 +5,7 @@
                 <el-menu :default-active="defaultActive" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" @select="menuSelect">
 
                     <div v-for="item in menuList">
-                        <el-menu-item :index="item.type">
+                        <el-menu-item :index="item.type" style="background-color:#fff">
                             <i class="el-icon-menu"></i>{{item.title}}
                         </el-menu-item>
                     </div>
@@ -35,15 +35,20 @@ export default {
                     title: '文章列表',
                     icon: 'el-icon-menu',
                     path: '/ArticleList'
+                },{
+                    type: "3",
+                    title: '标签管理',
+                    icon: 'el-icon-menu',
+                    path: '/TagManage'
                 },
                 {
-                    type: "3",
+                    type: "4",
                     title: '写博客',
                     icon: 'el-icon-menu',
                     path: '/WriteArticle'
                 },
                 {
-                    type: "4",
+                    type: "5",
                     title: '备忘',
                     icon: 'el-icon-menu',
                     path: '/Memorandum'

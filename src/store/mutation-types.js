@@ -1,0 +1,1 @@
+export const BOLG_INFO = "BOLG_INFO"
